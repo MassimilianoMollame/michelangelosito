@@ -1,0 +1,251 @@
+ {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+figure {
+  margin: 0;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+}
+cite {
+  font-style: normal;
+}
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* font */
+
+@font-face {
+  font-family: "cigra";
+  src: url("font/cigra_free_demo-webfont.woff2") format("woff2"),
+    url("font/cigra_free_demo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "circular";
+  src: url("font/circularstd-bold-webfont.woff2") format("woff2"),
+    url("font/circularstd-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+html {
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none !important;
+  background: #fff5e7;
+}
+
+.Navbar {
+  position: fixed;
+  text-decoration: none;
+  top: 1em;
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  z-index: 5;
+  background: #fff5e7;
+}
+
+.NavElement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  margin-top: 25px;
+  font-family: "circular";
+  font-size: 25px;
+  text-decoration: none;
+
+  color: #f0f0f0;
+}
+
+.NavCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  width: 30%;
+}
+
+.titolo {
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: 40px;
+  font-family: cigra;
+}
+
+.row {
+  align-self: center;
+  float: left;
+  width: 25%;
+  padding: 50 0px;
+}
+
+.card {
+  display: flex;
+  font-family: "circular";
+  height: 380px;
+  padding: 0 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background-color: none;
+  border: 3px solid #1d1d1d;
+}
+
+.card a {
+  color: black;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.card a img {
+  margin-top: 10px;
+  width: max-content;
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.card:hover h1 {
+  text-decoration: none;
+  color: #fff5e7;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 900px) {
+  .row {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer column {
+    width: 100%;
+  }
+}
+
+.space {
+  height: 200px;
+  width: 100%;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  margin-top: auto;
+  background-color: #fff5e7;
+
+  color: #1d1d1d;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  font-family: "circular";
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.column p {
+  margin: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .footer column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .NavElement {
+    font-size: 20px;
+  }
+
+  .NavCenter {
+    font-size: 12px;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .NavElement {
+    font-size: 30px;
+  }
+  .NavCenter {
+    font-size: 15px;
+    width: 50%;
+  }
+}
